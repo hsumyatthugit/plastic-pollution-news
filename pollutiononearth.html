@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pollution On Earth</title>
+	<style type="text/css">
+		
+		body{
+			font-family: sans-serif;
+			height: 140vh;
+
+			display: flex;
+			justify-content: center;
+			/*align-items: center;*/
+
+			margin: 0;
+		}
+
+		.container{
+			width: 500px;
+			background-color: rgba(0,0,0,0.1);
+			padding: 40px;
+			box-shadow: 3px 3px 10px gray;
+
+			/*display: flex;*/
+			position: relative;
+		}
+
+		h2{
+			margin: 0 auto;
+		}
+
+		.container .img1{
+			width: 230px;
+			height: 230px;
+			top: 20px;
+			background-color: #20caff;
+			/*border: 7px solid #111;*/
+			border-radius: 20px;
+			box-shadow: 10px 10px 20px #484848;
+
+			position: relative;
+		}
+
+		.container .img1 img{
+			width: 100%;
+			height: 100%;
+
+			opacity: 0;
+
+			transform: rotate(700deg) scale(0);
+
+			transition: all 0.5s;
+		}
+		.container .img1:hover img{
+
+			border-radius: 20px;
+
+			opacity: 1;
+
+			transform: rotate(0deg) scale(1);
+
+			z-index: 3;
+		}
+
+		.container .img1::before{
+			content: '';
+			width: 100%;
+			height: 100%;
+			border-radius: 20px;
+
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			opacity: 0;
+
+			transition: all 0.3s;
+		}
+
+		
+		.img1 p{
+			width: 100%;
+			height: 100%;
+			top: -280px;
+
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+
+			transition: all 0.3s;
+
+
+			z-index: 2;
+		}
+
+		.container .img1:hover p{
+			opacity: 0;
+		}
+
+
+		/*img2*/
+
+		.container .img2{
+			width: 230px;
+			height: 230px;
+			top: -210px;
+			left: 255px;
+			background-color: #20caff;
+			/*border: 7px solid #111;*/
+			border-radius: 20px;
+			box-shadow: 10px 10px 20px #484848;
+
+			position: relative;
+		}
+
+		.container .img2 img{
+			width: 100%;
+			height: 100%;
+
+			opacity: 0;
+
+			transform: rotate(700deg) scale(0);
+
+			transition: all 0.5s;
+		}
+		.container .img2:hover img{
+
+			border-radius: 20px;
+
+			opacity: 1;
+
+			transform: rotate(0deg) scale(1);
+
+			z-index: 3;
+		}
+
+		.container .img2::before{
+			content: '';
+			width: 100%;
+			height: 100%;
+			border-radius: 20px;
+
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			opacity: 0;
+
+			transition: all 0.3s;
+		}
+
+		
+		.img2 p{
+			width: 100%;
+			height: 100%;
+
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+
+			transition: all 0.3s;
+
+
+			z-index: 2;
+		}
+
+		.container .img2:hover p{
+			opacity: 0;
+		}
+
+				/*img3*/
+
+		.container .img3{
+			width: 230px;
+			height: 230px;
+			top: -180px;
+			left: 0px;
+			background-color: #20caff;
+			/*border: 7px solid #111;*/
+			border-radius: 20px;
+			box-shadow: 10px 10px 20px #484848;
+
+			position: relative;
+		}
+
+		.container .img3 img{
+			width: 100%;
+			height: 100%;
+
+			opacity: 0;
+
+			transform: rotate(700deg) scale(0);
+
+			transition: all 0.5s;
+		}
+		.container .img3:hover img{
+
+			border-radius: 20px;
+
+			opacity: 1;
+
+			transform: rotate(0deg) scale(1);
+
+			z-index: 3;
+		}
+
+		.container .img3::before{
+			content: '';
+			width: 100%;
+			height: 100%;
+			border-radius: 20px;
+
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			opacity: 0;
+
+			transition: all 0.3s;
+		}
+
+		
+		.img3 p{
+			width: 100%;
+			height: 100%;
+
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+
+			transition: all 0.3s;
+
+
+			z-index: 2;
+		}
+
+		.container .img3:hover p{
+			opacity: 0;
+		}
+
+		/*img4*/
+
+		.container .img4{
+			width: 230px;
+			height: 230px;
+			background-color: #20caff;
+			/*margin-top: -550px;*/
+			/*border: 7px solid #111;*/
+			top: -410px;
+			left: 260px;
+			border-radius: 20px;
+			box-shadow: 10px 10px 20px #484848;
+
+			position: relative;
+		}
+
+		.container .img4 img{
+			width: 100%;
+			height: 100%;
+
+			opacity: 0;
+
+			transform: rotate(700deg) scale(0);
+
+			transition: all 0.5s;
+		}
+		.container .img4:hover img{
+
+			border-radius: 20px;
+
+			opacity: 1;
+
+			transform: rotate(0deg) scale(1);
+
+			z-index: 3;
+		}
+
+		.container .img4::before{
+			content: '';
+			width: 100%;
+			height: 100%;
+			border-radius: 20px;
+
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			opacity: 0;
+
+			transition: all 0.3s;
+		}
+
+		
+		.img4 p{
+			width: 100%;
+			height: 100%;
+
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+
+			transition: all 0.3s;
+
+
+			z-index: 2;
+		}
+
+		.container .img4:hover p{
+			opacity: 0;
+		}
+
+
+		/*img5*/
+
+		.container .img5{
+			width: 230px;
+			height: 230px;
+			top: -370px;
+			left: 0px;
+			background-color: #20caff;
+			/*border: 7px solid #111;*/
+			border-radius: 20px;
+			box-shadow: 10px 10px 20px #484848;
+
+			position: relative;
+		}
+
+		.container .img5 img{
+			width: 100%;
+			height: 100%;
+
+			opacity: 0;
+
+			transform: rotate(700deg) scale(0);
+
+			transition: all 0.5s;
+		}
+		.container .img5:hover img{
+
+			border-radius: 20px;
+
+			opacity: 1;
+
+			transform: rotate(0deg) scale(1);
+
+			z-index: 3;
+		}
+
+		.container .img5::before{
+			content: '';
+			width: 100%;
+			height: 100%;
+			border-radius: 20px;
+
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			opacity: 0;
+
+			transition: all 0.3s;
+		}
+
+		
+		.img5 p{
+			width: 100%;
+			height: 100%;
+
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+
+			transition: all 0.3s;
+
+
+			z-index: 2;
+		}
+
+		.container .img5:hover p{
+			opacity: 0;
+		}
+
+
+		/*img6*/
+
+		.container .img6{
+			width: 230px;
+			height: 230px;
+			top: -600px;
+			left: 260px;
+			background-color: #20caff;
+			/*border: 7px solid #111;*/
+			border-radius: 20px;
+			box-shadow: 10px 10px 20px #484848;
+
+			position: relative;
+		}
+
+		.container .img6 img{
+			width: 100%;
+			height: 100%;
+
+			opacity: 0;
+
+			transform: rotate(700deg) scale(0);
+
+			transition: all 0.5s;
+		}
+		.container .img6:hover img{
+
+			border-radius: 20px;
+
+			opacity: 1;
+
+			transform: rotate(0deg) scale(1);
+
+			z-index: 3;
+		}
+
+		.container .img6::before{
+			content: '';
+			width: 100%;
+			height: 100%;
+			border-radius: 20px;
+
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			opacity: 0;
+
+			transition: all 0.3s;
+		}
+
+		
+		.img6 p{
+			width: 100%;
+			height: 100%;
+
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+
+			transition: all 0.3s;
+
+
+			z-index: 2;
+		}
+
+		.container .img6:hover p{
+			opacity: 0;
+		}
+
+		a{
+			text-decoration: none;
+			position: absolute;
+			bottom: 30px;
+			right: 50px;
+		}
+
+		small{
+
+			margin: 0 0 0 600px;
+
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<h2>Pollution On Earth</h2>
+		<p><b> Plastic On Land</b> :The ocean is home to all kinds of creatures. Stripped and spotted fish, chriping dolphins.But it's also home to a ton of plastic trash, and that's a problem for all the animals that live in there. Every year, about 8 million tons f plastic waste escapes into the oceans from coastal nations.</p>
+			<div class="img1">
+				<img src="img/plastic/img12.jpg">
+				<p>Mountain of Plastic</p>
+			</div>
+
+
+			<div class="img2">
+				<img src="img/plastic/img3.jpg">
+				<p>Here is the result when the plastic were wasted like this</p>
+			</div>
+
+			<div class="img3">
+				<img src="img/plastic/img13.jpg">
+				<p>Huge amount of terrified plastic bottles</p>
+			</div>
+
+			<div class="img4">
+				<img src="img/plastic/img15.png">
+				<p>How terrified the plastic is!</p>
+			</div>
+			<div class="img5">
+				<img src="img/plastic/img20.jpg">
+				<p>Before and After wasting of the plastic</p>
+			</div>
+			<div class="img6">
+				<img src="img/plastic/img21.jpg">
+				<p>Earth Garbage Pollution Poster</p>
+			</div>
+			<a href="pollutioninwater.html"><span>next >> </span></a>
+			
+		</div>
+
+		
+	</div>
+
+
+	
+
+</body>
+</html>

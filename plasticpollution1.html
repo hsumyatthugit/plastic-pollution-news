@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NEWS</title>
+	<link href="img/plastic/img24.jpg" type="image/jpg" rel="icon" sizes="16x16" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<style type="text/css">
+
+		body{
+			font-family: sans-serif;
+			height: 200vh;
+			background-color:gray;
+
+			display: flex;
+			justify-content: center;
+			/*align-items: center;*/
+
+		}
+
+		a{
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		.container{
+			width: 1000px;
+			background-color: #fff;
+			box-shadow: 0 10px 5px rgba(0,0,0,1);
+
+			position: relative;
+
+		}
+		
+		.container .div1{
+			width: 200px;
+			height: 180vh;
+			/*background-color: skyblue;*/
+
+			position: absolute;
+			top: 0px;
+			left: 30px;
+
+		}
+
+		.container .div1 a{
+			color: gray;
+		}
+
+
+		.container .div2{
+			width: 720px;
+			height: 190vh;
+			/*background-color: orange;*/
+
+			position: absolute;
+			top: 20px;
+			left: 280px;
+		}
+
+
+		.div2 h1{
+			font-size: 50px;
+			text-shadow: 0 10px 5px rgba(0,0,0,0.2);
+			font-family: 'Times New Roman';
+		}
+
+		.container .div2 p{
+			text-align: justify;
+		}
+
+		 small{
+			font-family: 'Belll MT Italic';
+		}
+
+		.container .div2 .news1 .p1{
+			width: 450px;
+		}
+
+		.container .div2 .news1 .img1{
+			width: 200px;
+			height: 180px;
+			border: 2px solid gray;
+
+			position: absolute;
+			top: 180px;
+			left: 500px;
+		}
+
+		.container .div2 .news1 .img1 img{
+			width: 200px;
+			height: 130px;
+			padding-top: 25px;
+			padding-left: -1px;
+
+		}
+
+		
+		/*news2*/
+
+		.container .div2 .news2  .p1{
+			width: 450px;
+		}
+
+		.container .div2 .news2 .img1{
+			width: 200px;
+			height: 180px;
+			border: 2px solid gray;
+
+			position: absolute;
+			top: 420px;
+			left: 500px;
+		}
+
+
+		.container .div2 .news2 .img1 img{
+			width: 200px;
+			height: 130px;
+			padding-top: 25px;
+			padding-left: -1px;
+
+		}
+
+		
+		/*news3*/
+
+		.container .div2 .news3  .p1{
+			width: 450px;
+		}
+
+		.container .div2 .news3 .img1{
+			width: 200px;
+			height: 180px;
+			border: 2px solid gray;
+
+			position: absolute;
+			top: 660px;
+			left: 500px;
+		}
+
+
+		.container .div2 .news3 .img1 img{
+			width: 200px;
+			height: 130px;
+			padding-top: 25px;
+			padding-left: -1px;
+
+		}
+
+
+		/*news4*/
+
+		.container .div2 .news4  .p1{
+			width: 450px;
+		}
+
+		.container .div2 .news4 .img1{
+			width: 200px;
+			height: 180px;
+			border: 2px solid gray;
+
+			position: absolute;
+			top: 900px;
+			left: 500px;
+		}
+
+
+		.container .div2 .news4 .img1 img{
+			width: 200px;
+			height: 130px;
+			padding-top: 25px;
+			padding-left: -1px;
+
+		}
+
+		.prev{
+			text-decoration: none;
+
+			position: absolute;
+			bottom: 200px;
+			right: 0;
+		}
+
+
+		/*foot*/
+
+		.foot{
+			width: 1000px;
+			height: 150px;
+			/*background-color: skyblue;*/
+			margin-top: 1300px;
+			margin-bottom: 20px;
+
+			position: absolute
+			top:0;
+			left: 0;
+		}
+
+		.foot1{
+			width: 200px;
+			height: 150px;
+			background-color:  rgba(0,0,0,0.1);
+
+			position: absolute;
+			bottom: 56px;
+			left: 0;
+		}
+
+		.foot1 h4{
+			color: #777;
+			text-align: center;
+			padding: 0;
+		}
+
+		.foot1 ul{
+			list-style-type: none;
+
+			padding: 0;
+			margin:30px 0 0 20px;
+
+			display: flex;
+
+		}
+
+		.foot1 ul li{
+			width: 30px;
+			height: 30px;
+			border: 2px solid gray;
+			border-radius: 10px;
+			margin: 0 10px;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			position: relative;
+		}
+
+		.foot1 ul li i{
+			font-size: 20px;
+			color: gray;
+			
+		}
+
+		/*foot2*/
+
+		.foot2{
+			width: 200px;
+			height: 150px;
+			background-color:  rgba(0,0,0,0.1);
+
+			position: absolute;
+			bottom: 56px;
+			left: 232px;
+		}
+
+		.foot2 h4{
+			color: gray;
+			text-align: center;
+			margin-bottom: 35px;
+		}
+
+		.foot2 a{
+			color: gray;
+			border: 2px solid gray;
+			padding: 3px;
+			background-color: transparent;
+			margin-left: 50px;
+		}
+
+		/*foot3*/
+
+		.foot3{
+			width: 320px;
+			height: 150px;
+			background-color:  rgba(0,0,0,0.1);
+
+			position: absolute;
+			bottom: 56px;
+			left: 465px;
+		}
+
+		.foot3 h4{
+			color: gray;
+			text-align: center;
+			margin-bottom: 35px;
+		}
+
+		.foot3 input{
+			width: 190px;
+
+			display: inline;
+			background-color: transparent;
+			margin-left: 20px;
+		}
+
+		.foot3 .ip1{
+			width: 70px;
+			color: gray;
+			margin-left: 10px;
+			display: inline-block;
+			background-color: transparent;
+		}
+
+
+		/*foot4*/
+
+		.foot4{
+			width: 180px;
+			height: 150px;
+			background-color:  rgba(0,0,0,0.1);
+
+			position: absolute;
+			bottom: 56px;
+			right: 0;
+		}
+
+		.foot4 h4{
+			color: gray;
+			text-align: center;
+		}
+
+		/*.foot4 input{
+			width: 190px;
+
+			display: inline;
+			background-color: transparent;
+			margin-left: 20px;
+		}*/
+
+		.foot4 a{
+			width: 70px;
+			color: gray;
+			font-size: 25px;
+			margin:10px 0 0 10px;
+			display: inline-block;
+			background-color: transparent;
+		}
+
+		.foot4 .a1{
+			margin-left: 40px;
+		}
+
+		.foot4 .a2{
+			margin-left: -10px;
+		}
+
+
+		small{
+
+			padding: 0 0 0 10px;
+
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="div1">
+			
+			<img src="img/plastic/img23.jpg">
+
+			<a href="pollution.html"> >> Plastic Pollution</a>
+			<hr/>
+			<a href="showall.html"> >>  Show All</a>
+			<hr/>
+			<a href="pollutiononearth.html"> >> Pollution on Earth </a>
+			<hr/>
+			<a href="pollutioninwater.html"> >>  Pollution in Ocean</a>
+			<hr/>
+			<a href="localnews.html"> >>  Local News</a>
+			<hr/>
+			<a href="internationalnews.html"> >> International News</a>
+			<hr/>
+			<a href="latestnews.html"> >>  Latest News</a>
+			<hr/>
+			<a href="breakingnews.html"> >> Breaking News</a>
+			<hr/>
+			
+		</div>
+
+		<div class="div2">
+
+			<h1 class=".heading">Plastic Pollution</h1>		
+			<h2>NEWS</h2>
+			<div class="news1">
+				<p>Love to Know Environment Science <br/>
+				By Vijay Kinhal</p>
+				<small><i>- Published on October 7,2021 by <span>Voiceofyouth</span></i></small>
+				<div class="p1">
+					<p>Plstic Pollution of the earth's largesr bodies of waters, oceans, can take several forms. Once contaminated by pollution sources, many delicate ecosystems need a long time to recover.</p>
+				</div>
+
+				<div class="img1">
+					<img src="img/plastic/img32.jpg">
+				</div>
+
+				<a href="#">Learn More >></a>
+				<hr/>
+
+			</div>
+
+			<div class="news2">
+				<p>Green Matters Source:Istock<br/>
+				By Kristin Hunt</p>
+				<small><i>- Published on Nov 19 2020 by <span>ET</span></i></small>
+				<div class="p1">
+					<p>The ocean is to all kinds of creatures. Stripped and spotted fish, chirping dolphins, barking sea lions, and those terrifying great whited. But it's also home to a ton of plastic trash and that's a problem for all the animals that live in there.</p>
+				</div>
+
+				<div class="img1">
+					<img src="img/plastic/img7.jpg">
+				</div>
+
+				<a href="#">Learn More >></a>
+				<hr/>
+
+			</div>
+
+
+			<div class="news3">
+				<p>The Associated Press<br/>
+				By U.S News</p>
+				<small><i>- Published on December 1,2021 by <span>Voiceofyouth</span></i></small>
+				<div class="p1">
+					<p>In the year of 2019, Oct 22, plastic and other debris is seen on the beach on Midway Atoll in the Northwestern Hawaiian Islands. America needs to rethink and reduce the way it generates plastics because so much of it is littering the oceans, the National Academy of Sicences recommends in the news report.</p>
+				</div>
+
+				<div class="img1">
+					<img src="img/plastic/img22.jpg">
+				</div>
+
+				<a href="#">Learn More >></a>
+				<hr/>
+
+			</div>
+
+
+			<div class="news4">
+				<p>Westbound Rower - Erden to Asia <br/>
+				By United Nation</p>
+				<small><i>- Published on October 7,2021 by <span>Voiceofyouth</span></i></small>
+				<div class="p1">
+					<p>Plastic leads to destroying the marine life and polluting the earth. Millions of tons of plastic are in the environment as waste, especially in the oceans and seas.  More than 80% of marine litter is plastic which kills up to 1 million seabirds and 100,000 marine creatures each year by ingesting it.</p>
+				</div>
+
+				<div class="img1">
+					<img src="img/plastic/img15.png">
+				</div>
+
+				<a href="#">Learn More >></a>
+				
+
+			</div>
+
+			<div class="prev">
+				<a href="#"><pre> <a href="showall.html">PREV</a> 	<a href="showall.html">1</a>  <a href="pollutiononearth.html">2</a>  <a href="pollutioninwater.html">3</a>  <a href="localnews.html">4</a>  <a href="internationalnews.html">5</a>  <a href="latestnews.html">6</a> <a href="showall.html">NEXT</a> >></pre></a>
+			</div>
+
+		</div>
+
+		<div class="foot">
+			<div class="foot1">
+
+			<h4>Follow Us</h4>
+			
+			<ul>
+				<li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+				<li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+				<li><a href="https://youtube.com" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
+				
+			</ul>
+				
+		</div>
+
+		<div class="foot2">
+
+			<h4>Support Our Effort</h4>
+			
+			<a href="donate.html" target="_blank">DONATE</a>
+				
+		</div>
+
+		<div class="foot3">
+
+			<h4>Join our Mailing List</h4>
+
+			<input type="email" name="email" id="email" class="" placeholder="Enter your email" />
+			
+			<input type="submit" name="submit" id="submit" class="ip1" value="Register" />
+				
+		</div>
+
+		<div class="foot4">
+
+			<h4>Contact Us</h4>
+
+			<a class="a1" href="mailto:hsumyatthu280897@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+			<a class="a2" href="tel:09256202467"><i class="fas fa-phone"></i></a>
+				
+		</div>
+
+
+		</div>
+
+		<small> Copy right &#169 <span id="year"></span> F1 Media Group Co.,Ltd. All right reserved.</small>
+
+		<script type="text/javascript">
+
+			let date = new Date();
+			let utcyear = date.getUTCFullYear();
+			console.log(utcyear);
+			document.getElementById('year').textContent = utcyear;
+
+
+		</script>
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>International News</title>
+
+	<link href="img/plastic/img25.jpg" type="image/jpg" rel="icon" sizes="16x16" />
+	<style type="text/css">
+		
+		body{
+			font-family: sans-serif;
+			height: 140vh;
+
+			display: flex;
+			justify-content: center;
+			/*align-items: center;*/
+
+			margin: 0;
+		}
+
+		.container{
+			width: 500px;
+			background-color: rgba(0,0,0,0.1);
+			padding: 40px;
+			box-shadow: 3px 3px 10px gray;
+
+			/*display: flex;*/
+			position: relative;
+		}
+		img{
+			width: 220px;
+			height: 200px;
+
+			border-radius: 10px;
+		}
+		h2{
+			margin:-30px 0 0 0;
+			padding: 0;
+			font-size: 40px;
+			font-style: italic;
+		}
+
+		/*img1*/
+		.img1{
+			width: 220px;
+			height: 180px;
+			top: 12px;
+
+			box-shadow:  3px 3px 10px gray;
+			border-radius: 10px;
+			margin-top: 15px;
+
+			position: relative;
+		}
+		.img1 p{
+			color: #fff;
+			position: absolute;
+			top: 50px;
+			left: 30px;
+		}
+
+		.img1 a{
+			text-decoration: none;
+			border-radius: 10px;
+			background-color: skyblue;
+			padding: 8px;
+
+			position: absolute;
+			top: 140px;
+			left: 50px;
+		}
+
+		.img1 span{
+			background-color: #222;
+			color: #fff;
+			margin-right: 0;
+			border-radius: 0 10px 0 0;
+
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+
+		/*img3*/
+
+		.n3{
+			position: absolute;
+			top: 270px;
+			left: 41px;
+		}
+		.img3{
+			width: 200px;
+			height: 180px;
+			box-shadow:  3px 3px 10px gray;
+			border-radius: 10px;
+			margin-top: 30px;
+
+			position: relative;
+		}
+		.img3 p{
+			color: #fff;
+			position: absolute;
+			top: 50px;
+			left: 60px;
+		}
+
+		.img3 a{
+			text-decoration: none;
+			border-radius: 10px;
+			background-color: skyblue;
+			padding: 8px;
+
+			position: absolute;
+			top: 140px;
+			left: 50px;
+		}
+
+		.img3 span{
+			background-color: #222;
+			color: #fff;
+			margin-right: 0;
+
+			position: absolute;
+			top: 0;
+			right: -13px;
+		}
+
+		/*img2*/
+
+		.n2{
+			position: absolute;
+			top: 270px;
+			left: 320px;
+		}
+		.img2{
+			width: 200px;
+			height: 180px;
+			box-shadow:  3px 3px 10px gray;
+			border-radius: 10px;
+			margin-top: 30px;
+
+			position: relative;
+		}
+		.img2 p{
+			color: #fff;
+			position: absolute;
+			top: 50px;
+			left: 60px;
+		}
+
+		.img2 a{
+			text-decoration: none;
+			border-radius: 10px;
+			background-color: skyblue;
+			padding: 8px;
+
+			position: absolute;
+			top: 140px;
+			left: 50px;
+		}
+
+		.img2 span{
+			background-color: #222;
+			color: #fff;
+			margin-right: 0;
+
+			position: absolute;
+			top: 0;
+			right: -13px;
+		}
+
+		/*img3*/
+
+		.n3{
+			position: absolute;
+			top: 515px;
+			left: 40px;
+		}
+		.img3{
+			width: 200px;
+			height: 180px;
+			box-shadow:  3px 3px 10px gray;
+			border-radius: 10px;
+			margin-top: 30px;
+
+			position: relative;
+		}
+		.img3 p{
+			color: #fff;
+			position: absolute;
+			top: 50px;
+			left: 60px;
+		}
+
+		.img3 a{
+			text-decoration: none;
+			border-radius: 10px;
+			background-color: skyblue;
+			padding: 8px;
+
+			position: absolute;
+			top: 140px;
+			left: 50px;
+		}
+
+		.img3 span{
+			background-color: #222;
+			color: #fff;
+			margin-right: 0;
+
+			position: absolute;
+			top: 0;
+			right: -13px;
+		}
+
+		/*img4*/
+
+		.n4{
+			position: absolute;
+			top: 515px;
+			left: 320px;
+		}
+		.img4{
+			width: 200px;
+			height: 180px;
+			box-shadow:  3px 3px 10px gray;
+			border-radius: 10px;
+			margin-top: 30px;
+
+			position: relative;
+		}
+		.img4 p{
+			color: #fff;
+			position: absolute;
+			top: 50px;
+			left: 60px;
+		}
+
+		.img4 a{
+			text-decoration: none;
+			border-radius: 10px;
+			background-color: skyblue;
+			padding: 8px;
+
+			position: absolute;
+			top: 140px;
+			left: 50px;
+		}
+
+		.img4 span{
+			background-color: #222;
+			color: #fff;
+			margin-right: 0;
+
+			position: absolute;
+			top: 0;
+			right: -13px;
+		}
+
+		/*img5*/
+
+		.n5{
+			position: absolute;
+			top: 740px;
+			left: 40px;
+		}
+		.img5{
+			width: 200px;
+			height: 180px;
+			box-shadow:  3px 3px 10px gray;
+			border-radius: 10px;
+			margin-top: 30px;
+
+			position: relative;
+		}
+		.img5 p{
+			color: #fff;
+			position: absolute;
+			top: 50px;
+			left: 60px;
+		}
+
+		.img5 a{
+			text-decoration: none;
+			border-radius: 10px;
+			background-color: skyblue;
+			padding: 8px;
+
+			position: absolute;
+			top: 140px;
+			left: 50px;
+		}
+
+		.img5 span{
+			background-color: #222;
+			color: #fff;
+			margin-right: 0;
+
+			position: absolute;
+			top: 0;
+			right: -13px;
+		}
+
+		/*img6*/
+
+		.n6{
+			position: absolute;
+			top: 740px;
+			left: 320px;
+		}
+		.img6{
+			width: 200px;
+			height: 180px;
+			box-shadow:  3px 3px 10px gray;
+			border-radius: 10px;
+			margin-top: 30px;
+
+			position: relative;
+		}
+		.img6 p{
+			color: #fff;
+			position: absolute;
+			top: 50px;
+			left: 60px;
+		}
+
+		.img6 a{
+			text-decoration: none;
+			border-radius: 10px;
+			background-color: skyblue;
+			padding: 8px;
+
+			position: absolute;
+			top: 140px;
+			left: 50px;
+		}
+
+		.img6 span{
+			background-color: #222;
+			color: #fff;
+			margin-right: 0;
+
+			position: absolute;
+			top: 0;
+			right: -13px;
+		}
+
+		.next{
+			text-decoration: none;
+			font-style: italic;
+			position: absolute;
+			bottom: 30px;
+			right: 40px;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="container">
+		<h2>International News</h2>
+		<p>The analysis found particles of more than 2.5 microns in size, which is 2500 times bigger than a nanometer. It is currently unclear if this contamination is affecting human health, but if the water is also found to contain nano-particle pollutants, there could be adverse impacts on human well-being, according to scientists associated with the studyThe ocean is home to all kinds of creatures. Stripped and spotted fish, chriping dolphins.</p>
+		<p>A 2017 study to focus on global drinking water pollution with plastics, and showed that with a contamination rate of 94%, tap water in the United States was the most polluted, followed by Lebanon and India. </p>
+		<div class="img1">
+				<img src="img/plastic/img7.jpg">
+				<p>Plastic Pollution kills millions of marine animals every year</p>
+				<a href="plasticpollution1.html">Read More >></a>
+				<span>3 days ago</span>
+			</div>
+
+
+			<div class="n2">
+				<div class="img2">
+					<img src="img/plastic/img16.jpg">
+					<p>Plastic Waste in the Ocean</p>
+					<a href="plasticpollution1.html">Read More >></a>
+					<span>7 days ago</span>
+				</div>
+			</div>
+
+			<div class="n3">
+				<div class="img3">
+					<img src="img/plastic/img14.jpg">
+					<p>This is the reason how terrife plastic is</p>
+					<a href="plasticpollution1.html">Read More >></a>
+					<span>7 days ago</span>
+				</div>
+			</div>
+
+			<div class="n4">
+				<div class="img4">
+					<img src="img/plastic/img18.jpg">
+					<p>This is the reason how terrife plastic is</p>
+					<a href="plasticpollution1.html">Read More >></a>
+					<span>5 days ago</span>
+				</div>
+			</div>
+			
+			<div class="n5">
+				<div class="img5">
+					<img src="img/plastic/img11.jpg">
+					<p>This is the reason how terrife plastic is</p>
+					<a href="plasticpollution1.html">Read More >></a>
+					<span>1 days ago</span>
+				</div>
+			</div>
+			
+			<div class="n6">
+				<div class="img6">
+					<img src="img/plastic/img8.jpg">
+					<p>This is the reason how terrife plastic is</p>
+					<a href="plasticpollution1.html">Read More >></a>
+					<span>8 days ago</span>
+				</div>
+			</div>
+
+			<a href="local.html" class="next">next >> </a>
+	</div>
+</body>
+</html>
